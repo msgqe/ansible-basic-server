@@ -1,0 +1,11 @@
+- src: git@github.com:msgqe/rhn-register.git
+  scm: git
+  name: rhn-register
+
+- src: git@github.com:msgqe/rhn-subscribe.git
+  scm: git
+  name: rhn-subscribe
+
+- src: git@github.com:msgqe/epel.git
+  scm: git
+  name: epel
