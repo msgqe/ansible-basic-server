@@ -14,3 +14,4 @@ test-prepare: clean
 test: test-prepare
 	ansible-playbook -vvv tests/test.yml -i $(TEST_INVENTORY)
 	rm ansible.cfg
+	docker rm -f $(containers) || true
