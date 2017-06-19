@@ -58,6 +58,14 @@ Including an example of how to use your role (for instance, with variables passe
       roles:
          - { role: basic-server }
 
+Testing
+----------------
+
+To test this role you need docker. If your system has docker, this role can be tested using the following command:
+
+```make test```
+
+
 License
 -------
 
