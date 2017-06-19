@@ -24,5 +24,3 @@ install:
 
 script:
   make test
-script:
-  cd test && make
