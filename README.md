@@ -3,6 +3,12 @@ Role Name
 
 This role provides a common OS platform for running the JBoss A-MQ 7 software.
 
+
+Build/Test Status
+------------
+
+Linux Build Status: [![Linux Build Status](https://api.travis-ci.org/msgqe/basic-server.svg?branch=docker-based-testing)](https://travis-ci.org/msgqe/basic-server)
+
 Requirements
 ------------
 
