@@ -41,7 +41,7 @@
 
 - name: Install common packages
   when:
-    - ansible_distribution == 'RedHat'
+    - ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS'
   package: name="{{ basic_server_common_packages }}" state=present enablerepo=epel
 
 
