@@ -6,7 +6,7 @@ clean:
 	rm -f ansible.cfg
 
 test-prepare: clean
-	printf '[defaults]\nroles_path=../:~/.ansible/user/roles/\n' >ansible.cfg
+	printf '[defaults]\nroles_path=~/.ansible/user/roles/:../\n' >ansible.cfg
 	docker rm -f $(containers) || true
 	ansible-galaxy install -f -r requirements.yml
 	ansible-galaxy install -f -r tests/requirements.yml
