@@ -57,3 +57,12 @@
     owner: root
     group: root
     mode: 0440
+
+- name: Localhost name check
+  shell: hostname
+  register: hostname_ret
+
+- name: Localhost name fix
+  when: hostname_ret.stdout == "localhost.localdomain"
+  hostname:
+    name: localhost
