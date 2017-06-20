@@ -49,3 +49,11 @@
   when:
     - ansible_distribution != 'RedHat'
   package: name="{{ basic_server_common_packages }}" state=present
+
+- name: Root TTY override
+  template:
+    src: templates/root-tty-override.j2
+    dest: /etc/sudoers.d/root-tty-override
+    owner: root
+    group: root
+    mode: 0440
