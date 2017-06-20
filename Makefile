@@ -3,7 +3,7 @@ TEST_INVENTORY?=tests/inventory
 containers = cnt-centos6 cnt-centos7
 
 clean:
-	rm -f ansible.cfg ./build
+	rm -rf ansible.cfg ./build
 	docker rm -f $(containers) || true
 
 test-prepare: clean
