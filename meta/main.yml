@@ -51,6 +51,11 @@ galaxy_info:
     # alphanumeric characters. Maximum 20 tags per role.
 
 dependencies:
-  - { name: rhn-register, src: https://github.com/msgqe/rhn-register.git }
-  - { name: rhn-subscribe, src: https://github.com/msgqe/rhn-subscribe.git }
-  - { name: epel, src: https://github.com/msgqe/epel.git }
+  - src: https://github.com/msgqe/rhn-register.git
+    name: rhn-register
+  - src: https://github.com/msgqe/rhn-register.git
+    name: rhn-register
+  - src: https://github.com/msgqe/rhn-subscribe.git
+    name: rhn-subscribe
+  - src: https://github.com/msgqe/epel.git
+    name: epel
