@@ -13,4 +13,4 @@
 # limitations under the License.
 ---
 # vars file for basic-server
-basic_server_common_packages: git,vim-enhanced,git,cmake,doxygen,gcc,gcc-c++,make,libaio-devel,net-tools,wget,python-pip,zip,bzip2,unzip,psmisc,java-1.8.0-openjdk-devel,python-setuptools
+basic_server_common_packages: git,vim-enhanced,git,cmake,doxygen,gcc,gcc-c++,make,libaio-devel,net-tools,wget,python-pip,zip,bzip2,unzip,psmisc,java-1.8.0-openjdk-devel,python-setuptools,sudo
