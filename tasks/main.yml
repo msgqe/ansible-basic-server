@@ -24,12 +24,14 @@
 - name: RHN registration
   when:
     - ansible_distribution == 'RedHat'
+    - basic_server_skip_rhn_registration is defined and basic_server_skip_rhn_registration == false
   include_role:
     name: rhn-register
 
 - name: RHN subscription
   when:
     - ansible_distribution == 'RedHat'
+    - basic_server_skip_rhn_subscription is defined and basic_server_skip_rhn_subscription == false
   include_role:
     name: rhn-subscribe
 

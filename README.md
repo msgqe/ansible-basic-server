@@ -24,6 +24,8 @@ Role Variables
 | Name              | Default Value       | Description          |
 |-------------------|---------------------|----------------------|
 | `basic_server_common_packages` | (see below) | A list of packages to install on the system. |
+| `basic_server_skip_rhn_registration` | undefined | Whether to skip RHN registration step. |
+| `basic_server_skip_rhn_subscription` | undefined | Whether to skip RHN repository subscription step. |
 
 The list of packages is dependent on the distribution. For the Red Hat family of distributions, the package list is:
 
