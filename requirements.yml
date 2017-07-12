@@ -1,11 +1,11 @@
-- src: https://github.com/msgqe/rhn-register.git
+- src: https://github.com/msgqe/ansible-rhn-register.git
   scm: git
-  name: rhn-register
+  name: ansible-rhn-register
 
-- src: https://github.com/msgqe/rhn-subscribe.git
+- src: https://github.com/msgqe/ansible-rhn-subscribe.git
   scm: git
-  name: rhn-subscribe
+  name: ansible-rhn-subscribe
 
-- src: https://github.com/msgqe/epel.git
+- src: https://github.com/msgqe/ansible-epel.git
   scm: git
-  name: epel
+  name: ansible-epel

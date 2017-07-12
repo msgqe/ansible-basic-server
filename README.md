@@ -7,7 +7,7 @@ This role provides a common OS platform for running the JBoss A-MQ 7 software.
 Build/Test Status
 ------------
 
-Linux Build Status: [![Linux Build Status](https://api.travis-ci.org/msgqe/basic-server.svg?branch=master)](https://travis-ci.org/msgqe/basic-server)
+Linux Build Status: [![Linux Build Status](https://api.travis-ci.org/msgqe/ansible-basic-server.svg?branch=master)](https://travis-ci.org/msgqe/ansible-basic-server)
 
 Requirements
 ------------
@@ -53,9 +53,9 @@ Dependencies
 ------------
 
 This role depends on the following roles:
-* rhn-register (Red Hat only)
-* rhn-subscribe (Red Hat only)
-* epel (EL - Red Hat, CentOS, etc)
+* ansible-rhn-register (Red Hat only)
+* ansible-rhn-subscribe (Red Hat only)
+* ansible-epel (EL - Red Hat, CentOS, etc)
 
 Example Playbook
 ----------------
@@ -64,7 +64,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: basic-server }
+         - { role: ansible-basic-server }
 
 Testing
 ----------------

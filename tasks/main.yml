@@ -26,20 +26,20 @@
     - ansible_distribution == 'RedHat'
     - basic_server_skip_rhn_registration is defined and basic_server_skip_rhn_registration == false
   include_role:
-    name: rhn-register
+    name: ansible-rhn-register
 
 - name: RHN subscription
   when:
     - ansible_distribution == 'RedHat'
     - basic_server_skip_rhn_subscription is defined and basic_server_skip_rhn_subscription == false
   include_role:
-    name: rhn-subscribe
+    name: ansible-rhn-subscribe
 
 - name: Ensure EPEL
   when:
     - ansible_os_family == 'RedHat' and ansible_distribution != 'Fedora'
   include_role:
-    name: epel
+    name: ansible-epel
 
 - name: Install common packages
   when:
