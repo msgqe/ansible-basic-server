@@ -13,3 +13,4 @@
 # limitations under the License.
 ---
 # defaults file for basic-server
+ansible_default_facts_dir: /etc/ansible/facts.d

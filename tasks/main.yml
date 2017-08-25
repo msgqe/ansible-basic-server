@@ -68,3 +68,9 @@
   when: hostname_ret.stdout == "localhost.localdomain"
   hostname:
     name: localhost
+
+- name: Create ansible default facts directory
+  file:
+    path: "{{ ansible_default_facts_dir }}"
+    mode: 0644
+    state: directory

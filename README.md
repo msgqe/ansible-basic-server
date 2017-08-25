@@ -23,6 +23,7 @@ Role Variables
 
 | Name              | Default Value       | Description          |
 |-------------------|---------------------|----------------------|
+| `ansible_default_facts_dir` | /etc/ansible/facts.d | Create this directory to store & load automatically ansible facts. |
 | `basic_server_common_packages` | (see below) | A list of packages to install on the system. |
 | `basic_server_skip_rhn_registration` | undefined | Whether to skip RHN registration step. |
 | `basic_server_skip_rhn_subscription` | undefined | Whether to skip RHN repository subscription step. |
