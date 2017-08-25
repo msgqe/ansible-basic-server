@@ -53,8 +53,6 @@ galaxy_info:
 dependencies:
   - src: https://github.com/msgqe/ansible-rhn-register.git
     name: ansible-rhn-register
-  - src: https://github.com/msgqe/ansible-rhn-register.git
-    name: ansible-rhn-register
   - src: https://github.com/msgqe/ansible-rhn-subscribe.git
     name: ansible-rhn-subscribe
   - src: https://github.com/msgqe/ansible-epel.git
