@@ -23,17 +23,26 @@
 
 
 - name: Install common packages
+  tags:
+    - basic
+    - packages
   when:
     - ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS'
   package: name="{{ basic_server_common_packages }}" state=present enablerepo=epel
 
 
 - name: Install common packages
+  tags:
+    - basic
+    - packages
   when:
     - ansible_distribution != 'RedHat'
   package: name="{{ basic_server_common_packages }}" state=present
 
 - name: Root TTY override
+  tags:
+    - basic
+    - tty
   template:
     src: templates/root-tty-override.j2
     dest: /etc/sudoers.d/root-tty-override
@@ -42,15 +51,24 @@
     mode: 0440
 
 - name: Localhost name check
+  tags:
+    - basic
+    - hostname
   shell: hostname
   register: hostname_ret
 
 - name: Localhost name fix
+  tags:
+    - basic
+    - hostname
   when: hostname_ret.stdout == "localhost.localdomain"
   hostname:
     name: localhost
 
 - name: Create ansible default facts directory
+  tags:
+    - basic
+    - facts
   file:
     path: "{{ ansible_default_facts_dir }}"
     mode: 0644
